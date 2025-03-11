@@ -1,7 +1,9 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx": "react-jsx",  // or "react" for React.createElement syntax
+    "outDir": "dist",    // Ensure output files go to a specific folder
+    "allowJs": true,     // Allow JS files
+    "declaration": false // Disable TypeScript declaration files
+  },
+  "include": ["src"]
 }
